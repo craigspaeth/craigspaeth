@@ -15,7 +15,15 @@ app.locals.captions = [
   'Screenshot of the second level, Macho Man Cave.',
   '3d model of Mr. Macho, a non-player character in Macho Man Cave.',
   '3d model of Mr. Macho in the Mirror World. When the player warps to the Mirror World,<br>Mr. Macho transforms to the above appearance and iniates alternate dialog.',
-  '3d model of Miranda, the player-character and protagonist.'
+  '3d model of Miranda, the player-character and protagonist.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.',
+  'Opening story illustrations.'
 ]
 app.locals._ = _
 
