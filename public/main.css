@@ -180,11 +180,14 @@ ul li:last-child {
 }
 #container {
   top: 50%;
-  position: absolute;
-  margin-top: -125px;
-  display: block;
   left: 50%;
-  margin-left: -282px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: block;
 }
 .mirror-container {
   width: 100vw;
@@ -236,7 +239,6 @@ ul li:last-child {
   background: transparent;
   height: 100vh;
   padding: 0 50px;
-  -webkit-border-radius: 0;
   border-radius: 0;
   right: 0;
   opacity: 0.5;

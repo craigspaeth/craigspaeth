@@ -11,6 +11,10 @@
     "node": "6.x.x",
     "npm": "3.x.x"
   },
+  "scripts": {
+    "start": "node .",
+    "deploy": "git add . && git commit -a -m 'deploying' && git push origin master && git push https://git.heroku.com/craigspaeth.git"
+  },
   "dependencies": {
     "babelify": "^7.3.0",
     "browserify-dev-middleware": "^1.0.0",
