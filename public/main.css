@@ -189,7 +189,7 @@ ul li:last-child {
   transform: translate(-50%, -50%);
   position: absolute;
   display: block;
-  min-width: 350px;
+  width: calc(100% - 32px);
 }
 .mirror-container {
   width: 100vw;
