@@ -129,6 +129,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 8px;
   padding-bottom: 3px;
+  line-height: 1em;
 }
 h2 {
   text-align: center;
@@ -188,6 +189,7 @@ ul li:last-child {
   transform: translate(-50%, -50%);
   position: absolute;
   display: block;
+  min-width: 350px;
 }
 .mirror-container {
   width: 100vw;
