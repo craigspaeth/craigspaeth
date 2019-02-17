@@ -1,21 +1,33 @@
-extends layout
-
-block content
-  .mirror-flickity( data-flickity )
-    for i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+doctype html
+html
+  head
+    link(
+      href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'
+      rel='stylesheet'
+      type='text/css'
+    )
+    link( rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen" )
+    link( rel="stylesheet" type="text/css" href="mirror.css" )
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+  body#body.mirror
+    .mirror-flickity( data-flickity )
+      for i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+        .mirror-container
+          .mirror-img-container
+            img( src="images/mirror/#{i}.jpg" )
+            .mirror-caption!= captions[i - 1]
       .mirror-container
-        .mirror-img-container
-          img( src="images/mirror/#{i}.jpg" )
-          .mirror-caption!= captions[i - 1]
-    .mirror-container
-      .mirror-iframe-container
-        iframe(
-          src='https://player.vimeo.com/video/8201644?color=ffffff'
-          width='768'
-          height='432'
-          frameborder='0'
-          webkitallowfullscreen=''
-          mozallowfullscreen=''
-          allowfullscreen=''
-        )
-        .mirror-caption Screen capture of initial gameplay prototype
+        .mirror-iframe-container
+          iframe(
+            src='https://player.vimeo.com/video/8201644?color=ffffff'
+            width='768'
+            height='432'
+            frameborder='0'
+            webkitallowfullscreen=''
+            mozallowfullscreen=''
+            allowfullscreen=''
+          )
+          .mirror-caption Screen capture of initial gameplay prototype
+    #scripts
+      script( src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js" )
+      script( src='main.js' )

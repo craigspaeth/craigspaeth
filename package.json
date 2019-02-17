@@ -16,6 +16,7 @@
     "deploy": "git add . && git commit -a -m 'deploying' && git push origin master && git push https://git.heroku.com/craigspaeth.git -f"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "babelify": "^7.3.0",
     "browserify-dev-middleware": "^1.0.0",
     "connect": "^3.4.1",
