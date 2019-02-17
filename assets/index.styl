@@ -1,0 +1,109 @@
+@require '../node_modules/nib/index.styl'
+global-reset()
+
+@font-face
+  font-family Ubuntu
+  font-style normal
+  src url(fonts/ubuntu-r.woff)
+
+@font-face
+  font-family Ubuntu Mono
+  font-style bold
+  src url(fonts/ubuntu-mono-b.woff)
+
+.index
+  background #f2f2f2
+  color #333
+  font-family Ubuntu
+  font-smoothing antialiased
+  display flex
+  align-items center
+  min-height 100vh
+  a
+    color #333
+    text-decoration none
+    display inline-block
+    position relative
+  ::selection
+    background #f9f4c5
+
+.index-viz
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  z-index -1
+
+.index-main
+  max-width 560px
+  margin-left 64px
+  h2, nav a
+    text-transform uppercase
+    font-family Ubuntu Mono
+    font-size 21px
+    letter-spacing 2px
+  h1
+    font-size 30px
+    line-height 40px
+    margin 16px 0
+  p
+    font-size 16px
+    line-height 24px
+    margin-bottom 16px
+    a:hover:after
+      border-bottom #FBEB66 solid 16px
+      top -18px
+    a:after
+      content ''
+      transition all 0.3s ease-in-out
+      border-bottom #FBEB66 solid 8px
+      width 100%
+      height 100%
+      position absolute
+      left 0
+      top -6px
+      z-index -1
+  nav a
+    transition all 0.3s ease-in-out
+    margin-right 32px
+    border-right 1px solid rgba(0,0,0,0.2)
+    padding 8px 0
+    padding-right 32px
+    cursor pointer
+    transition all 0.3s ease-in-out
+    position relative
+    &:after
+      content ''
+      height 21px
+      width calc(100% - 32px)
+      position absolute
+      left 0
+      z-index -1
+      background transparent
+      transition all 0.3s ease-in-out
+    &:hover:after
+      background #FBEB66
+    &:last-child
+      border-right 0
+
+#container
+  filter grayscale(100%) invert(100%)
+
+.dg.ac, #container > div
+  display none
+
+@media screen and (max-width: 600px)
+  .index-main
+    margin-left 0
+    padding 0 16px
+    h1
+      font-size 24px
+      line-height 32px
+    nav a
+      margin-right 16px
+      padding-right 16px
+    h2, nav a
+      font-size 18px
+    nav a:after
+      width calc(100% - 16px)

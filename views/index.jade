@@ -1,15 +1,66 @@
-extends layout
+doctype html
+html
+  head
+    link(
+      href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700'
+      rel='stylesheet'
+      type='text/css'
+    )
+    link(
+      rel="stylesheet"
+      href="https://npmcdn.com/flickity@2.0/dist/flickity.css"
+      media="screen" )
+    link( rel="stylesheet" type="text/css" href="index.css" )
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+  body#body.index
+    .index-viz#container
+    main.index-main
+      h2 Craig Spaeth
+      h1
+        | Using my background in art and technology to build products at the
+        | intersection of empathy and innovation
+      p
+        | I'm a digital product designer and engineer with experience leading&nbsp;
+        | teams at startups. I'm currently Head of Product & Engineering at&nbsp;
+        a( target='_blank' href='https://www.findoctave.com' ) Octave
+        | . In the past I've lead engineering teams and products for 7½&nbsp;
+        | years at&nbsp;
+        a( target='_blank' href='https://www.artsy.net' ) Artsy
+        | , did&nbsp;
+        a( href='http://www.pixelunicorns.com/' ) consulting
+        | &nbsp;for liquor brands, influencers, artists,&nbsp;
+        | startups and publishing companies, had some side hustles building and
+        | monetizing MMORPGS and real-estate websites, made 2D & 3D&nbsp;
+        a( target='_blank' href='https://vimeo.com/5499475' ) video&nbsp;
+        a( target='_blank' href='/mirror' ) games&nbsp;
+        | , created&nbsp;
+        a( target='_blank' href='https://github.com/craigspaeth/griffin' ) open soure
+        | &nbsp;
+        a( target='_blank' href='http://github.com/artsy/ezel' ) frameworks
+        | , and spoke at some&nbsp;
+        a( target='_blank' href='https://www.joyent.com/blog/node-js-on-the-road-nyc-craig-spaeth-brennan-moore') confrences
+        | &nbsp;and meetups.
+      nav.index-social
+        a( href='https://www.linkedin.com/in/craigspaeth/' ) LinkedIn
+        a( href='https://github.com/craigspaeth/cortex' ) GitHub
+        a( href='https://twitter.com/craigspaeth' ) Twitter
+    #scripts
+      script( src="https://threejs.org/build/three.js" )
+      script( src="https://threejs.org/examples/js/controls/OrbitControls.js" )
+      script( src="https://threejs.org/examples/js/shaders/CopyShader.js" )
+      script( src="https://threejs.org/examples/js/shaders/FXAAShader.js" )
+      script( src="https://threejs.org/examples/js/shaders/HorizontalTiltShiftShader.js" )
+      script( src="https://threejs.org/examples/js/shaders/VerticalTiltShiftShader.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/EffectComposer.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/RenderPass.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/BloomPass.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/ShaderPass.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/MaskPass.js" )
+      script( src="https://threejs.org/examples/js/postprocessing/SavePass.js" )
+      script( src="https://threejs.org/examples/js/MarchingCubes.js" )
+      script( src="https://threejs.org/examples/js/ShaderToon.js" )
+      script( src="https://threejs.org/examples/js/WebGL.js" )
+      script( src="https://threejs.org/examples/js/libs/stats.min.js" )
+      script( src="https://threejs.org/examples/js/libs/dat.gui.min.js" )
+      script( src="metaballs.js" )
 
-block content
-  #container
-    h1 Craig Spaeth
-    h2 Engineering at
-      a#artsy( href='http://artsy.net', target='_blank' )  Artsy
-      | . Passions include code, art & indie games.
-    ul
-      li#twitter
-        a( href='https://twitter.com/craigspaeth', target='_blank' ) Twitter
-      li#github
-        a( href='https://github.com/craigspaeth', target='_blank' ) Github
-      li#linkedin
-        a( href='https://www.linkedin.com/in/craigspaeth', target='_blank' ) LinkedIn
