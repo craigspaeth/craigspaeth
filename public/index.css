@@ -100,7 +100,7 @@ a img {
   src: url("fonts/ubuntu-mono-b.woff");
 }
 .index {
-  background: #f2f2f2;
+  background: #f9f9f9;
   color: #333;
   font-family: Ubuntu;
   -webkit-font-smoothing: antialiased;
@@ -125,7 +125,7 @@ a img {
   position: relative;
 }
 .index ::selection {
-  background: #f9f4c5;
+  background: rgba(0,0,0,0.1);
 }
 .index-viz {
   position: absolute;
@@ -157,17 +157,18 @@ a img {
   margin-bottom: 16px;
 }
 .index-main p a:hover:after {
-  border-bottom: #fbeb66 solid 16px;
+  border-bottom: rgba(251,235,102,0.82) solid 16px;
   top: -18px;
 }
 .index-main p a:after {
-  content: '';
+  content: '.';
+  color: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-bottom: #fbeb66 solid 8px;
+  border-bottom: rgba(251,235,102,0.82) solid 8px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -194,7 +195,8 @@ a img {
   position: relative;
 }
 .index-main nav a:after {
-  content: '';
+  content: '.';
+  color: transparent;
   height: 21px;
   width: calc(100% - 32px);
   position: absolute;
@@ -208,7 +210,7 @@ a img {
   transition: all 0.3s ease-in-out;
 }
 .index-main nav a:hover:after {
-  background: #fbeb66;
+  background: rgba(251,235,102,0.82);
 }
 .index-main nav a:last-child {
   border-right: 0;
