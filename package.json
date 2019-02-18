@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node .",
-    "deploy": "git push https://git.heroku.com/craigspaeth.git -f"
+    "deploy": "git checkout master && git pull upstream master && git push https://git.heroku.com/craigspaeth.git -f"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",

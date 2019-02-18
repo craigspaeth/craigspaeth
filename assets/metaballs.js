@@ -402,7 +402,7 @@ function setupGui () {
   effectController = {
     material: 'shiny',
 
-    speed: 1.0,
+    speed: 0.3,
     numBlobs: 10,
     resolution: 28,
     isolation: 80,
