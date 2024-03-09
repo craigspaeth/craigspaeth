@@ -7,12 +7,8 @@
   ],
   "version": "0.0.1-49",
   "private": true,
-  "engines": {
-    "node": "12.x.x"
-  },
   "scripts": {
-    "start": "node .",
-    "deploy": "git checkout master && git pull upstream master && git push https://git.heroku.com/craigspaeth.git -f"
+    "start": "node ."
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
