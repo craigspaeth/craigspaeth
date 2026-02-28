@@ -140,10 +140,14 @@ a img {
   margin-left: 64px;
 }
 .index-main h2,
+.index-main nav {
+  margin-top: 20px;
+}
+.index-main h2,
 .index-main nav a {
   text-transform: uppercase;
   font-family: Ubuntu Mono;
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: 2px;
 }
 .index-main h1 {
@@ -177,21 +181,11 @@ a img {
   z-index: -1;
 }
 .index-main nav a {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   margin-right: 32px;
   border-right: 1px solid rgba(0,0,0,0.2);
   padding: 8px 0;
   padding-right: 32px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   position: relative;
 }
 .index-main nav a:after {
@@ -222,7 +216,7 @@ a img {
 #container > div {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .index-main {
     margin-left: 0;
     padding: 0 16px;
@@ -234,10 +228,6 @@ a img {
   .index-main nav a {
     margin-right: 16px;
     padding-right: 16px;
-  }
-  .index-main h2,
-  .index-main nav a {
-    font-size: 18px;
   }
   .index-main nav a:after {
     width: calc(100% - 16px);
